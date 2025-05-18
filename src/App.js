@@ -8,11 +8,11 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <a
           className="App-link"
-          href="https://example.com"
+          href="https://www.google.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Jenkins on Udemy
+          Jenkins - React
         </a>
       </header>
       <p>
