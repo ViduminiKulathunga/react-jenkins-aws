@@ -91,6 +91,14 @@ pipeline {
                 '''
             }
         }
+
+        stage("Approve Prod") {
+            steps {
+                timeout(activity: true, time: 1) {
+                    input message: 'Read to Deploy to production? ', ok: 'Yes, I want to deploy'
+                }
+            }
+        }
         
         stage('Deploy Prod') {
             agent {
